@@ -1,0 +1,52 @@
+%ask{
+    width: 100%;
+    border: 0px;
+    outline: none;
+    margin-bottom: 15px;
+    height: 35px;
+}
+
+.ask{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    h1{
+        text-align: left;
+
+        &::after{
+            content: "";
+            background-color: $first-color;
+            width: 50px;
+            height: 5px;
+            display: grid;
+        }
+    }
+
+    form{
+        background-color: $first-color;
+        padding: 50px;
+
+        label{
+            display: block;
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        input{
+            background-color: white;
+            padding: 10px;
+            height: 40px;
+
+            @extend %ask;
+        }
+        
+        textarea{
+            display: block;
+            background-color: white;
+            height: 400px;
+
+            @extend %ask;
+        }
+    }
+}

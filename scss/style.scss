@@ -1,0 +1,245 @@
+@import "colors";
+@import "buttons";
+@import "ask";
+@import "mobile";
+@import "social";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    ul{
+        text-align: center;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+            &:hover{
+                color: $first-color;
+                transition: 1s;
+            }
+        }
+    }
+    .hero{
+        text-align: center;
+        padding-bottom: 110px;
+        h1{
+            color:white;
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+        h5{
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        p{
+            padding-bottom: 90px;
+        }
+    }
+}
+
+.about-us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .ram{
+        padding: 1px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .text-ab{
+        text-align: right;
+
+        h1{
+            text-align: left;
+            &::after{
+                content: "";
+                background-color: $first-color;
+                width: 50px;
+                height: 5px;
+                display: grid;
+            }
+        }
+
+        h6{
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+
+        p{
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: right;
+
+        h1{
+            padding-bottom: 50px;
+            text-align: left;
+
+            &::after{
+                content: "";
+                background-color: $first-color;
+                width: 50px;
+                height: 5px;
+                display: grid;
+            }
+        }
+
+        .ram{
+            padding: 1px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        h3{
+            text-align: left;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            &:hover{
+                color: $first-color;
+                transition: 0.5s;
+            }
+        }
+
+        p{
+            text-align: left;
+        }
+}
+
+.recent-projects{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1{
+        padding-bottom: 50px;
+
+        &::after{
+            content: "";
+            background-color: $first-color;
+            width: 50px;
+            height: 5px;
+            display: grid;
+        }
+    }
+    .ram{
+        padding: 1px;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.out{
+    text-align: left;
+    padding-bottom: 50px;
+
+    &::after{
+        content: "";
+        background-color: $first-color;
+        width: 50px;
+        height: 5px;
+        display: grid;
+    }
+}
+
+.testimonials{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: black;
+
+    h5{
+        padding-top: 20px;
+        color: white;
+    }
+
+    p{
+        color: white;
+    }
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $second-color;
+
+    h4{
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+    .ram{
+        padding: 1px;
+        img{
+            width: 100%;
+        }
+    }
+
+    h5{
+        color: white;
+        padding-top: 20px;
+    }
+
+    p{
+        color: white;
+        padding-top: 10px;
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            padding-top: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+
+            &:hover{
+                color: $first-color;
+                transition: 0.5s;
+            }
+
+            &::after{
+                content: "";
+                width: 5px;
+                height: 5px;
+                background-color: $first-color;
+                display: grid;
+                position: relative;
+                top: -15px;
+                left: -15px;
+            }
+        }
+    }
+
+    label{
+        color: white;
+    }
+}
